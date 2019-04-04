@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
 const sqlite = require('sqlite')
+const path = require('path')
 
-const dbPromise = sqlite.open('./chinook.db', { Promise })
+const dbPromise = sqlite.open(path.resolve(__dirname, 'chinook.db'), { Promise })
 
 app.get('/', (req, res) => {
   res.send('Olá! <a href="/about">About page</a>')
