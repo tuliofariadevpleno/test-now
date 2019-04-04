@@ -2,7 +2,10 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Olá!')
+  res.send('Olá! <a href="/about">About page</a>')
+})
+app.get('/about', (req, res) => {
+  res.send('Olá about!')
 })
 
 module.exports = app
