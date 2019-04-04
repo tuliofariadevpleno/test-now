@@ -6,5 +6,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(process.env.PORT || 3000, (err) => {
-  console.log('listening...')
+  console.log('listening...', err)
 })
