@@ -8,4 +8,5 @@ app.get('/about', (req, res) => {
   res.send('Olá about!')
 })
 
-module.exports = app
+app.listen(process.env.PORT || 3000, err => console.log(err))
+
