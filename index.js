@@ -5,6 +5,4 @@ app.get('/', (req, res) => {
   res.send('Olá!')
 })
 
-app.listen(process.env.PORT || 3000, (err) => {
-  console.log('listening...', err)
-})
+module.exports = app
